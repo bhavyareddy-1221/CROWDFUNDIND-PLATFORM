@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CrowdfundX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CrowdfundX</h1>
+    <button onclick="showForm()">Create Project</button>
+  </header>
+
+  <section id="projectForm" style="display:none;">
+    <h2>New Project</h2>
+    <form id="createProject">
+      <input type="text" id="title" placeholder="Project Title" required />
+      <textarea id="description" placeholder="Project Description" required></textarea>
+      <input type="number" id="goal" placeholder="Funding Goal (₹)" required />
+      <button type="submit">Submit Project</button>
+    </form>
+  </section>
+
+  <section id="projects">
+    <h2>Active Projects</h2>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
